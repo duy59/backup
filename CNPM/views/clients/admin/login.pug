@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Đăng nhập
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    .container
+      h2 Đăng nhập
+      form
+        .form-group
+          label(for="username") Tên người dùng:
+          input#username(type="text", name="username", required)
+        .form-group
+          label(for="password") Mật khẩu:
+          input#password(type="password", name="password", required)
+        .form-group
+          button(type="submit") Đăng nhập

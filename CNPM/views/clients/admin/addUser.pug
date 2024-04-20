@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Thêm người dùng
+    link(rel="stylesheet", href="/css/style1.css")
+  body
+    .container
+      h2 Thêm người dùng
+      form
+        .form-group
+          label(for="username") Tên người dùng:
+          input#username(type="text", name="username", required)
+        .form-group
+          label(for="password") Mật khẩu:
+          input#password(type="password", name="password", required)
+        .form-group
+          label(for="email") Gmail:
+          input#email(type="email", name="email", required)
+        .form-group
+          label(for="phone") Số điện thoại:
+          input#phone(type="tel", name="phone", required)
+        .form-group
+          label(for="position") Vị trí làm việc:
+          input#position(type="text", name="position", required)
+        .form-group
+          button(type="submit") Thêm
+          button(type="button", onclick="cancel()") Hủy
